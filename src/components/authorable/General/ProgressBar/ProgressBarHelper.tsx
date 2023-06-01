@@ -10,7 +10,7 @@ const showPercentageBaseText = (
     fields.percentageBasedText.length > 0 &&
     fields.percentageBasedTextPosition?.value === position
   ) {
-    let selectedData = getSelectedData(fields.percentageBasedText, percentage);
+    const selectedData = getSelectedData(fields.percentageBasedText, percentage);
     if (selectedData) {
       return <Text tag="p" field={selectedData.text} />;
     }
